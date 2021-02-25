@@ -1,0 +1,409 @@
+<!--A Design by Med Coder
+Author: Ahmed Samir
+Template Name: Mars Academy | professional  Bootstrap 4 Template
+Author URL: https://www.facebook.com/a7med.samir.f
+License URL: https://github.com/a7medsamirf/Mars-Academy/blob/master/LICENSE
+-->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>أكاديمية مارس</title>
+
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/dashboard.css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <link rel="shortcut icon" href="assets/images/logo.png">
+
+</head>
+
+<body>
+
+    <!-- ======== Start wrapper ======== -->
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header skin-background">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/mars2.png" class="img-fluid logo" alt="mars">
+                </a> </div>
+            <div class="student text-center">
+                <img src="assets/images/dashboard/Student Picture.jpg" class="img-fluid" alt="student">
+                <h3 class="mt-3">روبرت جاكسون</h3>
+            </div>
+            <ul class="list-unstyled components mt-3">
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <small>لوحة التحكم</small> <span class="badge badge-info">جديد</span>
+                    </a>
+                </li>
+                <li><a href="index.html"><i class="fas fa-home"></i>الرئيسة</a></li>
+
+                <li>
+                    <a href="#Courses" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-graduation-cap"></i>كورسات</a>
+                    <ul class="collapse list-unstyled" id="Courses">
+                        <li><a href="grid-layout.html">عرض الكورسات</a></li>
+                        <li><a href="listing-layout.html">قائمة الكورسات</a></li>
+                        <li><a href="single-course.html">صفحة الكورس</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#Account" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-cogs"></i>الحساب</a>
+                    <ul class="collapse list-unstyled" id="Account">
+                        <li><a href="dashboard-mange.html">تعديل الحساب</a></li>
+                        <li><a href="dashboard-billing.html">تعديل الخطة </a></li>
+                    </ul>
+                </li>
+                <li><a href="contact-us.html"><i class="fas fa-paper-plane"></i>أتصل بنا</a></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i>خروج</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- Page Content  -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light skin-background">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+                    <ul class="mr-auto">
+                        <div class="notifications">
+                            <li class="nav-item icon active dropdown">
+                                <button type="button" class="btn btn-primary" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="far fa-bell"></i> <span class="badge badge-light">3</span>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="display: none;">
+                                    <h4>الأشعارات</h4>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="media">
+                                            <img src="assets/images/people-say/2.jpg" class="ml-3" alt="Notifications">
+                                            <div class="media-body mt-2">
+                                                <p>
+                                                    <span>Jason Fuller</span>
+                                                    posted a new <br> course WordPress for Beginner
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="media">
+                                            <img src="assets/images/people-say/1.jpg" class="ml-3" alt="Notifications">
+                                            <div class="media-body mt-2">
+                                                <p>
+                                                    <span>Marie Wagner</span>
+                                                    Marie Wagner <br> announcement For the next 5 <br>days, you can
+                                                    download...
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="media">
+                                            <img src="assets/images/people-say/3.jpg" class="ml-3" alt="Notifications">
+                                            <div class="media-body mt-2">
+                                                <p>
+                                                    <span>Jason Fuller</span>
+                                                    posted a new <br> course WordPress for Beginner
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Content Header (Page header) -->
+
+            <!-- ======== Start dashboard ======== -->
+
+            <section class="content" id="dashboard">
+                <div class="container">
+                    <div class="row justify-content-center">
+
+                        <div class="col-lg-12 mb-5">
+                            <div class="heading mb-5">
+                                <h2>نظرة عامة
+                                </h2>
+                                <span class="line"></span>
+                            </div>
+                            <div class="subscription">
+                                <div class="battery">
+                                    <i class="fas fa-battery-quarter fa-2x"></i>
+                                    <span class="mr-5"> ينتهي اشتراكك في 25 فبراير 2021 </span>
+                                </div>
+                                <button type="submit" class="btn btn-primary">
+                                    تطوير</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 courses">
+                            <div class="heading mb-5">
+                                <h2>الدورات</h2>
+                                <span class="line"></span>
+                            </div>
+                            <p>دوراتك الأخيرة
+                            </p>
+                            <h3 class="progress-title">تطوير WordPress مع Bootstrap </h3>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:30%;">
+                                    <div class="progress-value"></div>
+                                </div>
+                            </div>
+                            <h3 class="progress-title">أدوبي فوتوشوب CC للمصورين</h3>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:15%;">
+                                    <div class="progress-value"></div>
+                                </div>
+                            </div>
+                            <h3 class="progress-title">تعلم وفهم AngularJS </h3>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:50%;">
+                                    <div class="progress-value"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 certificates">
+                            <div class="heading mb-5">
+                                <h2>الشهادات</h2>
+                                <span class="line"></span>
+                            </div>
+                            <p>الشهادات (3)</p>
+
+                            <div class="media mt-5 first">
+                                <button type="button" class="btn btn-secondary ml-3" data-container="body"
+                                    data-toggle="popover" data-placement="top" data-content="Name of Certificates">
+                                    <i class="fas fa-file-alt"></i>
+                                </button>
+                                <div class="media-body">
+                                    <p class="mt-1">تعلم وفهم AngularJS
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="media mt-4">
+                                <button type="button" class="btn btn-secondary ml-3" data-container="body"
+                                    data-toggle="popover" data-placement="top" data-content="Name of Certificates">
+                                    <i class="fas fa-file-alt"></i>
+                                </button>
+                                <div class="media-body">
+                                    <p class="mt-1">تعلم وفهم ES6
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="media mt-4">
+                                <button type="button" class="btn btn-secondary ml-3" data-container="body"
+                                    data-toggle="popover" data-placement="top" data-content="Name of Certificates">
+                                    <i class="fas fa-file-alt"></i>
+                                </button>
+                                <div class="media-body">
+                                    <p class="mt-1">مقدمة في التسويق عبر البريد الإلكتروني
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 mb-5 mt-5">
+                            <div class="heading mb-5">
+                                <h2>الدورات المشتراة </h2>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center" id="courses">
+                        <div class="col">
+                            <div class="card">
+                                <img src="assets/images/popular/WordPress.png" class="img-fluid card-img-top"
+                                    alt="WordPress">
+                                <div class="salary">
+                                    <p>$24.99</p>
+                                </div>
+                                <div class="card-body text-center">
+                                    <a href="#" class="card-title">تطوير WordPress</a>
+                                    <p class="card-text">جيسون هوبكنز</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted"><i class="fas fa-comment"></i>222</small>
+                                    <small class="text-muted"><i class="fas fa-user"></i>1454</small>
+                                    <small class="text-muted rating">★ ★ ★ ★ ☆</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="assets/images/popular/Security.jpg" class="img-fluid card-img-top"
+                                    alt="Security">
+                                <div class="salary">
+                                    <p>$20.99</p>
+                                </div>
+                                <div class="card-body text-center">
+                                    <a href="#" class="card-title">أمان Linux</a>
+                                    <p class="card-text">كريستيان راميريز</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted"><i class="fas fa-comment"></i>22</small>
+                                    <small class="text-muted"><i class="fas fa-user"></i>144</small>
+                                    <small class="text-muted rating">★ ★ ★ ☆ ☆</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="assets/images/popular/Marketing.jpg" class="img-fluid card-img-top"
+                                    alt="Marketing">
+                                <div class="salary">
+                                    <p class="free">مجانا</p>
+                                </div>
+                                <div class="card-body text-center">
+                                    <a href="#" class="card-title">استراتيجيات التسويق عبر الإنترنت</a>
+                                    <p class="card-text">ألبرت ألكسندر</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted"><i class="fas fa-comment"></i>75</small>
+                                    <small class="text-muted"><i class="fas fa-user"></i>3541</small>
+                                    <small class="text-muted rating">★ ★ ★ ★ ☆</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="assets/images/popular/Javascript.png" class="img-fluid card-img-top"
+                                    alt="Javascript">
+                                <div class="salary">
+                                    <p>$15</p>
+                                </div>
+                                <div class="card-body text-center">
+                                    <a href="#" class="card-title">جافا سكريبت للمبتدئين</a>
+                                    <p class="card-text">مارفن ستون</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted"><i class="fas fa-comment"></i>101</small>
+                                    <small class="text-muted"><i class="fas fa-user"></i>4541</small>
+                                    <small class="text-muted rating">★ ★ ★ ★ ☆</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="assets/images/popular/vue.jpg" class="img-fluid card-img-top" alt="vue">
+                                <div class="salary">
+                                    <p>$20</p>
+                                </div>
+                                <div class="card-body text-center">
+                                    <a href="#" class="card-title">Vue JS Essentials </a>
+                                    <p class="card-text">Stephen Grider</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted"><i class="fas fa-comment"></i>150</small>
+                                    <small class="text-muted"><i class="fas fa-user"></i>451</small>
+                                    <small class="text-muted rating">★ ★ ★ ★ ☆</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="assets/images/popular/angular.jpg" class="img-fluid card-img-top"
+                                    alt="angular">
+                                <div class="salary">
+                                    <p>$25</p>
+                                </div>
+                                <div class="card-body text-center">
+                                    <a href="#" class="card-title">تعلم وفهم AngularJS</a>
+                                    <p class="card-text">والتر باتل</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted"><i class="fas fa-comment"></i>314</small>
+                                    <small class="text-muted"><i class="fas fa-user"></i>144</small>
+                                    <small class="text-muted rating">★ ★ ☆ ☆ ☆</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 mb-5 mt-5">
+                            <div class="heading">
+                                <h2>الإختبارات</h2>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 quizzes">
+                            <p>أدائك الأخير
+                            </p>
+                            <div class="media mt-5">
+                                <div class="media-body">
+                                    <h5 class="mt-0">عنوان الاختبار يذهب هنا؟ </h5>
+                                    <p>كورس: <a href=""> تطوير WordPress مع Bootstrap</a> </p>
+                                </div>
+                                <h5>6.8 <span>حسن</span></h5>
+
+                            </div>
+                            <div class="media mt-3">
+                                <div class="media-body">
+                                    <h5 class="mt-0">عنوان الاختبار يذهب هنا؟</h5>
+                                    <p>كورس: <a href="">تعلم و فهم AngularJS</a> </p>
+                                </div>
+                                <h5>9.8 <span>عظيم</span> </h5>
+
+                            </div>
+                            <div class="media mt-3">
+                                <div class="media-body">
+                                    <h5 class="mt-0">عنوان الاختبار يذهب هنا؟</h5>
+                                    <p>كورس: <a href="">Adobe Photoshop CC للمصورين</a> </p>
+                                </div>
+                                <h5>2.4 <span>فشل</span></h5>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ======== Start footer ======== -->
+
+            <footer class="footer-copyright text-center">
+                <div class="copy-right-textt">© 2020 Mars Academy - بواسطة <a href="#">Med Coder</a>- جميع
+                    الحقوق محفوظة </div>
+        </div>
+        </footer>
+    </div>
+    </div>
+
+    <!-- ======== End Footer ======== -->
+
+    <!-- jquery library -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="//code.tidio.co/u9arqkwszwpsk1orrawskb31akxprjo4.js" async></script>
+
+
+</body>
+
+</html>
