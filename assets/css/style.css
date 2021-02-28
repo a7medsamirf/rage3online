@@ -2484,7 +2484,19 @@ figure.img-box:hover img {
     right: 90px;
     left: inherit;
   }
-
+  .card-custom-avatar img {
+    border-radius: 50%;
+    position: absolute;
+    top: 145px;
+    left: 0.5rem;
+    width: 75px;
+    height: 75px;
+    border: 3px dashed #f1f6ff;
+    box-shadow: 0px 14px 22px -9px #bbcbd8;
+}
+.card-custom-img::after {
+  display: none;
+}
 }
 
 @media only screen and (max-width: 575.98px) {
