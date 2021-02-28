@@ -721,6 +721,15 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: center
 }
 
+.slider .heading::before {
+
+  background: transparent;
+}
+
+.slider  .heading::after {
+  background: transparent;
+}
+
 .slider .header-widgets {
   position: relative;
   background-color: #374752;
@@ -763,7 +772,9 @@ input[type=number]::-webkit-outer-spin-button {
   line-height: 1.9;
   border-radius: 50%;
 }
-
+.slider .content {
+  padding-top: 35vh;
+}
 /*--------------------------------------------------
 [10. Start POPULAR COURSES ]
 --------------------------------------------------*/
@@ -869,7 +880,7 @@ input[type=number]::-webkit-outer-spin-button {
 .card-custom-img::after {
   position: absolute;
   content: '';
-  top: 98px;
+  top: 105px;
   right: 0;
   width: 0;
   height: 0;
