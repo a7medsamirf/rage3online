@@ -56,7 +56,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Cairo', sans-serif;
-  color: #fff;
   overflow-x: hidden;
   text-align: right;
 }
@@ -2446,7 +2445,7 @@ figure.img-box:hover img {
     right: 90px;
     left: inherit;
   }
-  
+
   .card-custom-avatar img {
     border-radius: 50%;
     position: absolute;
@@ -2774,7 +2773,7 @@ a.scrollToTop:hover {
 
 .bg-title {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.62);
+  background-color: rgb(40 130 181);
   left: 0;
   right: 0;
   top: 0;
