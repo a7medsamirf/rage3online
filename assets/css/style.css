@@ -831,6 +831,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .card-custom-img {
+  position: relative;
   min-height: 125px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -841,7 +842,7 @@ input[type=number]::-webkit-outer-spin-button {
 .card-custom-img::after {
   position: absolute;
   content: '';
-  top: 105px;
+  bottom: 0;
   right: 0;
   width: 0;
   height: 0;
@@ -2445,6 +2446,7 @@ figure.img-box:hover img {
     right: 90px;
     left: inherit;
   }
+  
   .card-custom-avatar img {
     border-radius: 50%;
     position: absolute;
@@ -2455,9 +2457,7 @@ figure.img-box:hover img {
     border: 3px dashed #f1f6ff;
     box-shadow: 0px 14px 22px -9px #bbcbd8;
 }
-.card-custom-img::after {
-  display: none;
-}
+
 }
 
 @media only screen and (max-width: 575.98px) {
