@@ -345,3 +345,11 @@ $(function () {
     template: '<div class="tooltip md-tooltip"><div class="tooltip-arrow md-arrow"></div><div class="tooltip-inner md-inner"></div></div>'
   });
 })
+
+
+$(document).ready(function () {
+  $('.table').DataTable({
+    "ordering": false // false to disable sorting (or any other option)
+    });
+  $('.dataTables_length').addClass('bs-select');
+  });

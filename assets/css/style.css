@@ -148,7 +148,10 @@ input[type=number]::-webkit-outer-spin-button {
 {
   background-color: #2882b5;
 }
-
+.chat-room img.avatar {
+  width: 3rem;
+  height: 3rem;
+}
 /*--------------------------------------------------
 [2. Start Breadcrumb ]
 --------------------------------------------------*/
