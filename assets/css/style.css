@@ -42,6 +42,7 @@ Style Index
     30. Start Footer 
     31. Start Media Query Section
     32. Start Loading Page
+    33. Start exam Page
 */
 
 /* Main Css Rules  for Main Elements in The project */
@@ -321,6 +322,23 @@ input[type=number]::-webkit-outer-spin-button {
   border: 1px solid #f1f1f1;
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 14px 22px -9px #bbcbd8;
+}
+
+.media-body.exam-q {
+  padding: 15px 0px;
+  border: 1px solid #f1f1f1;
+  position: relative;
+    cursor: pointer;
+/*     box-shadow: 0px 14px 22px -9px #bbcbd8 !important;
+ */}
+
+ .media-body.exam-q
+{
+
+} 
+
+.media-body.exam-q.Answer img.card-img-top {
+  width: 30%;
 }
 
 .card-footer {
@@ -3069,4 +3087,124 @@ a.scrollToTop:hover {
 
 .Instructor-details-area .card:hover .post-img img {
   transform: scale(1.08);
+}
+
+
+/*--------------------------------------------------
+[33. Start exam Page ]
+--------------------------------------------------*/
+
+#exam-page
+{
+  position: relative;
+}
+
+#exam-page h5.d-flex.mr-3 {
+  background: #4285f4;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  padding: 0px 9px;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 14px 22px -9px #bbcbd8 !important;
+}
+
+
+.example .flipdown {
+  margin: auto;
+}
+
+.example h1 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 3em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.example p {
+  text-align: center;
+  font-weight: 100;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.example .buttons {
+  width: 100%;
+  height: 50px;
+  margin: 50px auto 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.example .buttons p {
+  height: 50px;
+  line-height: 50px;
+  font-weight: 400;
+  padding: 0px 25px 0px 0px;
+  color: #333;
+  margin: 0px;
+}
+
+.example .button {
+  display: inline-block;
+  height: 50px;
+  box-sizing: border-box;
+  line-height: 46px;
+  text-decoration: none;
+  color: #333;
+  padding: 0px 20px;
+  border: solid 2px #333;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all .2s ease-in-out;
+}
+
+.example .button:hover {
+  background-color: #333;
+  color: #FFF;
+}
+
+.example .button i {
+  margin-right: 5px;
+}
+
+@media(max-width: 550px) {
+  .example {
+    width: 100%;
+    height: 362px;
+  }
+
+  .example h1 {
+    font-size: 2.5em;
+  }
+
+  .example p {
+    margin-bottom: 25px;
+  }
+
+  .example .buttons {
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+    display: block;
+  }
+
+  .example .buttons p,
+  .example .buttons a {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .example .buttons p {
+    padding-right: 0px;
+  }
+
+  .example .buttons a {
+    display: inline-block;
+  }
 }
