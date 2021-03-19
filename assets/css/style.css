@@ -39,10 +39,10 @@ Style Index
     27. Start events / event-single  Page
     28. Start contact-us Page
     29. Start gallery grid page
-    30. Start Footer 
-    31. Start Media Query Section
-    32. Start Loading Page
-    33. Start exam Page
+    30. Start exam Page
+    31. Start Footer 
+    32. Start Media Query Section
+    33. Start Loading Page
 */
 
 /* Main Css Rules  for Main Elements in The project */
@@ -145,14 +145,16 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: #2882b5;
   border-color: #2882b5;
 }
-.primary
-{
+
+.primary {
   background-color: #2882b5;
 }
+
 .chat-room img.avatar {
   width: 3rem;
   height: 3rem;
 }
+
 /*--------------------------------------------------
 [2. Start Breadcrumb ]
 --------------------------------------------------*/
@@ -328,14 +330,10 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 15px 0px;
   border: 1px solid #f1f1f1;
   position: relative;
-    cursor: pointer;
-/*     box-shadow: 0px 14px 22px -9px #bbcbd8 !important;
- */}
-
- .media-body.exam-q
-{
-
-} 
+  cursor: pointer;
+  /*     box-shadow: 0px 14px 22px -9px #bbcbd8 !important;
+ */
+}
 
 .media-body.exam-q.Answer img.card-img-top {
   width: 30%;
@@ -746,7 +744,7 @@ input[type=number]::-webkit-outer-spin-button {
   background: transparent;
 }
 
-.slider  .heading::after {
+.slider .heading::after {
   background: transparent;
 }
 
@@ -792,9 +790,11 @@ input[type=number]::-webkit-outer-spin-button {
   line-height: 1.9;
   border-radius: 50%;
 }
+
 .slider .content {
   padding-top: 35vh;
 }
+
 /*--------------------------------------------------
 [10. Start POPULAR COURSES ]
 --------------------------------------------------*/
@@ -952,6 +952,10 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 5px;
 }
 
+.canlearn h5 {
+  color: #fff;
+}
+
 /*--------------------------------------------------
 [12. Start Offers ]
 --------------------------------------------------*/
@@ -1077,11 +1081,13 @@ input[type=number]::-webkit-outer-spin-button {
   line-height: 24px;
   margin-bottom: 14px;
 }
+
 #latest-news .card {
   max-height: 470px;
   height: 470px;
   border-radius: 15px;
 }
+
 /*--------------------------------------------------
 [14. Start Center Achievements ]
 --------------------------------------------------*/
@@ -2280,9 +2286,96 @@ figure.img-box:hover img {
   filter: blur(2px);
 }
 
+/*--------------------------------------------------
+[30. Start exam page ]
+--------------------------------------------------*/
+#exam-page {
+  position: relative;
+  background-color: #eeeff1;
+}
+
+#exam-page .card {
+  border-radius: 10px;
+  box-shadow: 0 0 12px -8px rgb(0 0 0 / 75%);
+}
+
+#exam-page .navbar .navbar-brand {
+  font-family: 'Cairo', sans-serif;
+}
+
+#exam-page .navbar.bg-primary {
+  background-color: #18191c !important;
+}
+
+#exam-page #footer {
+  position: relative;
+  background-color: #18191c;
+  color: #fff;
+}
+
+#exam-page .card.card-body {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+#exam-page .question {
+  display: none
+}
+
+#exam-page .question img {
+  max-width: 100%;
+  height: auto !important
+}
+
+#exam-page .question .ans .card {
+  padding-bottom: 30px !important
+}
+
+#exam-page .question .ans .card:hover {
+  background-color: #eee
+}
+
+#exam-page .question .ans .card.active {
+  border: solid 2px #21bf73
+}
+
+#exam-page .question .ans img {
+  width: 100%
+}
+
+.answer {
+  display: table;
+  position: relative;
+  padding-left: 1.8rem;
+  cursor: pointer;
+  margin-bottom: .5rem;
+}
+
+#exam-page .answer input,
+#exam-page .answer img {
+  display: grid;
+}
+
+#exam-page  .card-footer .card.card-body {
+  height: 100px;
+}
+
+#exam-page .btn-outline-success:hover {
+  color: #fff !important;
+  background-color: #28a745 !important;
+  border-color: #28a745 !important;
+  transition: all 0.5s ease-in-out;
+}
+
+#exam-page .btn-outline-danger:hover {
+  color: #fff !important;
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
+  transition: all 0.5s ease-in-out;
+}
+
 
 /*--------------------------------------------------
-[30. Start Footer ]
+[31. Start Footer ]
 --------------------------------------------------*/
 
 #footer {
@@ -2371,7 +2464,7 @@ figure.img-box:hover img {
 }
 
 /*--------------------------------------------------
-[ 31. Start Media Query Section ]
+[ 32. Start Media Query Section ]
 --------------------------------------------------*/
 
 @media only screen and (max-width: 990px) {
@@ -2476,7 +2569,7 @@ figure.img-box:hover img {
     height: 75px;
     border: 3px dashed #f1f6ff;
     box-shadow: 0px 14px 22px -9px #bbcbd8;
-}
+  }
 
 }
 
@@ -2499,7 +2592,7 @@ figure.img-box:hover img {
 
 
 /*--------------------------------------------------
-[32. Start Loading Page ]
+[33. Start Loading Page ]
 --------------------------------------------------*/
 
 .preload {
@@ -2613,7 +2706,7 @@ figure.img-box:hover img {
   bottom: 60px;
   z-index: 999;
   cursor: pointer;
-  transform: translate(-80px,0);
+  transform: translate(-80px, 0);
   transition: .5s ease-in-out;
   box-shadow: 0 8px 16px 0 #2882b5;
   background-color: #2882b5 !important;
@@ -2639,118 +2732,118 @@ a.scrollToTop:hover {
 
 ***/
 
-.team-section{
-	position:relative;
-	overflow:hidden;
+.team-section {
+  position: relative;
+  overflow: hidden;
   padding-bottom: 50px;
   padding-top: 50px;
 }
 
-.team-section .inner-container{
-	position:relative;
+.team-section .inner-container {
+  position: relative;
 }
 
-.team-section .inner-container .color-layer{
-	position:absolute;
-	right:-140px;
-	top:-50px;
-	width:490px;
-	height:490px;
-	border-radius:50%;
-	background-color:#ffe00c;
+.team-section .inner-container .color-layer {
+  position: absolute;
+  right: -140px;
+  top: -50px;
+  width: 490px;
+  height: 490px;
+  border-radius: 50%;
+  background-color: #ffe00c;
 }
 
-.team-section .pattern-layer{
-	position:absolute;
-	left:80px;
-	bottom:-50px;
-	width:667px;
-	height:120px;
+.team-section .pattern-layer {
+  position: absolute;
+  left: 80px;
+  bottom: -50px;
+  width: 667px;
+  height: 120px;
 }
 
-.team-section .title-column{
-	position:relative;
-	margin-bottom:40px;
+.team-section .title-column {
+  position: relative;
+  margin-bottom: 40px;
 }
 
-.team-section .title-column .inner-column{
-	position:relative;
+.team-section .title-column .inner-column {
+  position: relative;
 }
 
-.team-section .blocks-column{
-	position:relative;
-	margin-bottom:40px;
+.team-section .blocks-column {
+  position: relative;
+  margin-bottom: 40px;
 }
 
-.team-section .blocks-column .inner-column{
-	position:relative;
+.team-section .blocks-column .inner-column {
+  position: relative;
 }
 
-.team-block{
-	position:relative;
-	margin-bottom:30px;
+.team-block {
+  position: relative;
+  margin-bottom: 30px;
 }
 
-.team-block .inner-box{
-	position:relative;
-	padding:20px 20px;
-	border-radius:8px;
-	background-color:#ffffff;
-	box-shadow:0px 0px 15px rgba(0,0,0,0.10);
+.team-block .inner-box {
+  position: relative;
+  padding: 20px 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
 }
 
-.team-block .inner-box .image{
-	position:relative;
-	overflow:hidden;
-	background-color:#2882b5;
+.team-block .inner-box .image {
+  position: relative;
+  overflow: hidden;
+  background-color: #2882b5;
 }
 
-.team-block .inner-box .image img{
-	position:relative;
-	width:100%;
-	display:block;
-	-webkit-transition:all 600ms ease;
-	-ms-transition:all 600ms ease;
-	-o-transition:all 600ms ease;
-	-moz-transition:all 600ms ease;
-	transition:all 600ms ease;
+.team-block .inner-box .image img {
+  position: relative;
+  width: 100%;
+  display: block;
+  -webkit-transition: all 600ms ease;
+  -ms-transition: all 600ms ease;
+  -o-transition: all 600ms ease;
+  -moz-transition: all 600ms ease;
+  transition: all 600ms ease;
 }
 
-.team-block .inner-box:hover .image img{
-	opacity:0.7;
-	transform:scale(1.05,1.05) rotate(2deg);
+.team-block .inner-box:hover .image img {
+  opacity: 0.7;
+  transform: scale(1.05, 1.05) rotate(2deg);
 }
 
-.team-block .inner-box .lower-content{
-	position:relative;
-	padding-top:30px;
+.team-block .inner-box .lower-content {
+  position: relative;
+  padding-top: 30px;
 }
 
-.team-block .inner-box .lower-content h5{
-	position:relative;
-	font-weight:700;
-	line-height:1.2em;
+.team-block .inner-box .lower-content h5 {
+  position: relative;
+  font-weight: 700;
+  line-height: 1.2em;
 }
 
-.team-block .inner-box .lower-content h5 a{
-	position:relative;
-	color:#06092d;
-	-webkit-transition:all 300ms ease;
-	-ms-transition:all 300ms ease;
-	-o-transition:all 300ms ease;
-	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;
+.team-block .inner-box .lower-content h5 a {
+  position: relative;
+  color: #06092d;
+  -webkit-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 
-.team-block .inner-box .lower-content h5 a:hover{
-	color:#2882b5;
+.team-block .inner-box .lower-content h5 a:hover {
+  color: #2882b5;
 }
 
-.team-block .inner-box .lower-content .designation{
-	position:relative;
-	color:#06092d;
-	font-size:16px;
-	margin-top:10px;
+.team-block .inner-box .lower-content .designation {
+  position: relative;
+  color: #06092d;
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 
@@ -2808,6 +2901,7 @@ a.scrollToTop:hover {
   font-size: 40px;
   font-weight: bold;
 }
+
 .heading::before {
   position: absolute;
   content: '';
@@ -2827,6 +2921,7 @@ a.scrollToTop:hover {
   right: 0;
   background: #2882b5;
 }
+
 /* ----- End Inner Header ----- */
 
 /* ========== Start About Us Page ========== */
@@ -2835,7 +2930,7 @@ a.scrollToTop:hover {
   width: 100%;
   overflow: hidden;
   height: 380px;
-  background: url(../images/inner/course.jpg)  repeat-x fixed;
+  background: url(../images/inner/course.jpg) repeat-x fixed;
   background-size: cover;
 }
 
@@ -2843,95 +2938,94 @@ a.scrollToTop:hover {
   padding-top: 100px;
 }
 
-#Lectures
-{
+#Lectures {
   position: relative;
 }
 
-.details-block{
-	position:relative;
-	margin-bottom:30px;
+.details-block {
+  position: relative;
+  margin-bottom: 30px;
   border: none;
 }
 
-.details-block .inner-box{
-	position:relative;
-	padding:30px 30px;
-	text-align:center;
-	background-color:#ffffff;
-	box-shadow:0px 0px 15px rgba(0,0,0,0.10);
+.details-block .inner-box {
+  position: relative;
+  padding: 30px 30px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
   border-radius: 10px;
   border: none;
 }
 
-.details-block .inner-box .icon-box{
-	position:relative;
-	width:80px;
-	height:80px;
-	color:#2882b5;
-	font-size:36px;
-	margin:0 auto;
-	border-radius:5px;
-	line-height:85px;
-	text-align:center;
-	background-color:#fff9c5;
+.details-block .inner-box .icon-box {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  color: #2882b5;
+  font-size: 36px;
+  margin: 0 auto;
+  border-radius: 5px;
+  line-height: 85px;
+  text-align: center;
+  background-color: #fff9c5;
 }
 
-.details-block .inner-box .overlay-link{
-	position:absolute;
-	left:0px;
-	top:0px;
-	right:0px;
-	bottom:0px;
+.details-block .inner-box .overlay-link {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
 }
 
-.details-block .inner-box h5{
-	position:relative;
-	font-weight:600;
-	line-height:1.3em;
-	margin-top: 10px;
+.details-block .inner-box h5 {
+  position: relative;
+  font-weight: 600;
+  line-height: 1.3em;
+  margin-top: 10px;
 }
 
-.details-block .inner-box h5 a{
-	position:relative;
-	color:#2882b5;
-	-webkit-transition: all 300ms ease;
-	-moz-transition: all 300ms ease;
-	-ms-transition: all 300ms ease;
-	-o-transition: all 300ms ease;
-	transition: all 300ms ease;
+.details-block .inner-box h5 a {
+  position: relative;
+  color: #2882b5;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 
-.details-block .inner-box h5 a:hover{
-	color:#2882b5;
+.details-block .inner-box h5 a:hover {
+  color: #2882b5;
 }
 
-.details-block .inner-box .text{
-	position:relative;
-	line-height:1.8em;
-	color:#626262;
-	margin-top:15px;
-	margin-bottom:25px;
+.details-block .inner-box .text {
+  position: relative;
+  line-height: 1.8em;
+  color: #626262;
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
 
-.details-block .inner-box .lectures{
-	position: relative;
-    color: #393939;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.4em;
+.details-block .inner-box .lectures {
+  position: relative;
+  color: #393939;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4em;
 }
 
-.details-block .inner-box .hours{
-    position: relative;
-    color: #2882b5;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.4em;
+.details-block .inner-box .hours {
+  position: relative;
+  color: #2882b5;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4em;
 }
 
 
-.details-block .inner-box  strong.free {
+.details-block .inner-box strong.free {
   color: green;
   font-weight: bold;
 }
@@ -3087,124 +3181,4 @@ a.scrollToTop:hover {
 
 .Instructor-details-area .card:hover .post-img img {
   transform: scale(1.08);
-}
-
-
-/*--------------------------------------------------
-[33. Start exam Page ]
---------------------------------------------------*/
-
-#exam-page
-{
-  position: relative;
-}
-
-#exam-page h5.d-flex.mr-3 {
-  background: #4285f4;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  line-height: 30px;
-  padding: 0px 9px;
-  color: #fff;
-  border-radius: 50%;
-  box-shadow: 0px 14px 22px -9px #bbcbd8 !important;
-}
-
-
-.example .flipdown {
-  margin: auto;
-}
-
-.example h1 {
-  text-align: center;
-  font-weight: 100;
-  font-size: 3em;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.example p {
-  text-align: center;
-  font-weight: 100;
-  margin-top: 0;
-  margin-bottom: 35px;
-}
-
-.example .buttons {
-  width: 100%;
-  height: 50px;
-  margin: 50px auto 0px auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.example .buttons p {
-  height: 50px;
-  line-height: 50px;
-  font-weight: 400;
-  padding: 0px 25px 0px 0px;
-  color: #333;
-  margin: 0px;
-}
-
-.example .button {
-  display: inline-block;
-  height: 50px;
-  box-sizing: border-box;
-  line-height: 46px;
-  text-decoration: none;
-  color: #333;
-  padding: 0px 20px;
-  border: solid 2px #333;
-  border-radius: 4px;
-  text-transform: uppercase;
-  font-weight: 700;
-  transition: all .2s ease-in-out;
-}
-
-.example .button:hover {
-  background-color: #333;
-  color: #FFF;
-}
-
-.example .button i {
-  margin-right: 5px;
-}
-
-@media(max-width: 550px) {
-  .example {
-    width: 100%;
-    height: 362px;
-  }
-
-  .example h1 {
-    font-size: 2.5em;
-  }
-
-  .example p {
-    margin-bottom: 25px;
-  }
-
-  .example .buttons {
-    width: 100%;
-    margin-top: 25px;
-    text-align: center;
-    display: block;
-  }
-
-  .example .buttons p,
-  .example .buttons a {
-    float: none;
-    margin: 0 auto;
-  }
-
-  .example .buttons p {
-    padding-right: 0px;
-  }
-
-  .example .buttons a {
-    display: inline-block;
-  }
 }

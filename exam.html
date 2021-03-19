@@ -33,93 +33,178 @@ License URL: https://github.com/a7medsamirf/Mars-Academy/blob/master/LICENSE
   </style>
 </head>
 
-<body>
-    <!-- ======== Start Navbar ======== -->
-    <nav class="navbar navbar-dark bg-primary justify-content-between fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">راجع اونلاين</a>
-            <div class="example">
-              <div id="flipdown" class="flipdown"></div>
-            </div>
-        </div>
+<body id="exam-page">
+  <!-- ======== Start Navbar ======== -->
+  <nav class="navbar navbar-dark bg-primary justify-content-between fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">راجع اونلاين</a>
+      <h5 class="time"><span class="btn btn-warning"><i class="far fa-clock mr-1"></i>الوقت المتبقي : 37 دقيقة</span></h5>
+    </div>
 
-      </nav>
-      
-    <!-- ======== End Navbar ======== -->
+  </nav>
+
+  <!-- ======== End Navbar ======== -->
 
 
-    <!-- ======== exam Navbar ======== -->
+  <!-- ======== exam Navbar ======== -->
 
-  <section id="exam-page" class="exam-">
+  <section  class="exam-page">
     <div class="content">
       <div class="container">
-    <h1 class="text-center mb-5">أسم الامتحان</h1>
-      <div class="row justify-content-center">
-        <div class="col-lg-7">
-          <div class="media">
-           <h5 class="d-flex mr-3">1</h5>
-            <div class="media-body exam-q">
-              <img class="card-img-top" src="assets/images/exam/1.jpg" alt="Card image exam">
+        <div class="col-12  wow fadeIn">
+          <div class="card card-body text-center">
+            <p class="text-muted">صفحة الإجابة  على الواجب / الإمتحان</p>
+            <div class="col-12">
+              <h4 class=" mb-3">
+                إسم الأمتحان
+              </h4>
+              <div class="row">
+                <div class="col-12 col-md-4  text-center">
+                  <p class="text-muted">النوع</p>
+                  <h5>إمتحان</h5>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                  <p class="text-muted">وقت الأمتحان</p>
+                  <h5 class="time">40 دقيقة</h5>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                  <p class="text-muted">عدد الأسئلة</p>
+                  <h5>2</h5>
+                </div>
+              </div>
             </div>
           </div>
-          <p class="mt-4 font-weight-bold">أختر من :</p>
-          <div class="media">
-            <!-- Group of default radios - option 1 -->
-            <div class="custom-control custom-radio">
-              <input type="radio" class="custom-control-input" id="defaultGroupExample1" name="groupOfDefaultRadios">
-              <label class="custom-control-label" for="defaultGroupExample1"></label>
+        </div>
+          <!--  start Exam -->
+        <div class="col-12 g wow fadeIn mt-3" style="visibility: visible; animation-name: fadeIn;">
+          <div class="startExam">
+          <div class="card text-center g">
+            <div class="card-body">
+              <p class="text-muted">جاهز لبدء الأمتحان ؟</p>
+              <a class="btn btn-success btn-start-exam" id="start">
+                <i class="fas fa-paper-plane mr-1"></i>
+                بدء الأمتحان
+              </a>
             </div>
-             <div class="media-body exam-q Answer">
-               <img class="card-img-top" src="assets/images/exam/2.jpg" alt="Card image exam">
-             </div>
-           </div>
-           <div class="media mt-3">
-            <!-- Group of default radios - option 2 -->
-            <div class="custom-control custom-radio">
-              <input type="radio" class="custom-control-input" id="defaultGroupExample2" name="groupOfDefaultRadios">
-              <label class="custom-control-label" for="defaultGroupExample2"></label>
-            </div>
-             <div class="media-body exam-q Answer">
-               <img class="card-img-top" src="assets/images/exam/3.jpg" alt="Card image exam">
-             </div>
-           </div>
-           <div class="media mt-3">
-            <!-- Group of default radios - option 3 -->
-            <div class="custom-control custom-radio">
-              <input type="radio" class="custom-control-input" id="defaultGroupExample3" name="groupOfDefaultRadios">
-              <label class="custom-control-label" for="defaultGroupExample3"></label>
-            </div>
-             <div class="media-body exam-q Answer">
-               <img class="card-img-top" src="assets/images/exam/4.jpg" alt="Card image exam">
-             </div>
-           </div>
-           <div class="media mt-3">
-            <!-- Group of default radios - option 4 -->
-            <div class="custom-control custom-radio">
-              <input type="radio" class="custom-control-input" id="defaultGroupExample4" name="groupOfDefaultRadios">
-              <label class="custom-control-label" for="defaultGroupExample4"></label>
-            </div>
-             <div class="media-body exam-q Answer">
-               <img class="card-img-top" src="assets/images/exam/5.jpg" alt="Card image exam">
-             </div>
-           </div>
+          </div>
         </div>
       </div>
-    <div class="row py-4 mt-md-5">
-      <div class="col text-center">
-          <a id="ending" href="#" class="btn btn-primary">أنهاء الأمتحان</a>
+   <!--  start Exam -->
+
+        <div class="text-center mt-3" id="show-box" style="display: none;">
+          <div class="question col-12 wow fadeIn" style="animation-name: fadeIn; display: block;">
+            <div class="card">
+              <div class="card-header">
+                السؤال الأول </div>
+              <div class="card-body">
+                <p>عنوان السؤال</p>
+                <img class="card-img-top" src="assets/images/exam/1.jpg" alt="Card image exam">
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card card-body">
+                      <label class="answer">
+                        <input type="radio" name="defaultExampleRadios">
+                        <img class="card-img-top" src="assets/images/exam/2.jpg" alt="Card image exam">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card card-body">
+                      <label class="answer">
+                        <input type="radio" name="defaultExampleRadios" checked>
+                        <img class="card-img-top" src="assets/images/exam/3.jpg" alt="Card image exam">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card card-body">
+                      <label class="answer">
+                        <input type="radio" name="defaultExampleRadios">
+                        <img class="card-img-top" src="assets/images/exam/4.jpg" alt="Card image exam">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card card-body">
+                      <label class="answer">
+                        <input type="radio" name="defaultExampleRadios">
+                        <img class="card-img-top" src="assets/images/exam/5.jpg" alt="Card image exam">
+                        <div class="b-input"></div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="question col-12 wow fadeIn mt-3"
+            style="visibility: visible; animation-name: fadeIn; display: block;">
+            <div class="card">
+              <div class="card-header">
+                السؤال الثانى </div>
+              <div class="card-body">
+                <p>عنوان السؤال</p>
+                <img class="card-img-top" src="assets/images/exam/1.jpg" alt="Card image exam">
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col-6">
+                    <button class="btn btn-block btn-lg btn-outline-success true">
+                      <i class="fas fa-check"></i>
+                      صح
+                    </button>
+                  </div>
+                  <div class="col-6">
+                    <button class="btn btn-block btn-lg btn-outline-danger false">
+                      <i class="fas fa-times"></i>
+                      خطأ
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 wow fadeIn mt-3">
+          <div class="card mt-3">
+            <div class="card-header">
+              إنهاء الإمتحان • لا يمكنك الدخول للإمتحان مجدداً بعد الضغط على "إنهاء الأمتحان"
+            </div>
+            <div class="card-body">
+                <a id="ending" href="#" class="btn btn-danger"> <i class="fas fa-flag mr-1"></i> أنهاء الأمتحان</a>
+            </div>
+          </div>
+        </div>
+
+        </div>
 
       </div>
     </div>
     </div>
-    </div>
-    </div>
+
+
+
+
+
   </section>
-
-
   <!-- ======== exam page ======== -->
 
-
+  <footer id="footer">
+    <div class="container" style="text-align:center">
+      <div class="footer-copyright text-center py-3">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="">
+              جميع الحقوق محفوظة ل راجع أونلاين © 2021
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
   <!-- jquery library -->
@@ -130,51 +215,26 @@ License URL: https://github.com/a7medsamirf/Mars-Academy/blob/master/LICENSE
   <script src="assets/js/sweetalert.min.js"></script>
   <script src="assets/js/flipdown.js"></script>
   <script src="assets/js/custom.js"></script>
-<script>
-  $("#ending").click(function(){
-    swal({
-      title: "هل انت متاكد",
-      icon: "warning",
-      buttons: true,
-      dangerMode: true,
-    })
-    .then((willDelete) => {
-      if (willDelete) {
-        swal("Poof! Your imaginary file has been deleted!", {
-          icon: "success",
+  <script>
+    $("#ending").click(function () {
+      swal({
+          title: "هل انت متاكد",
+          icon: "warning",
+          buttons: true,
+          dangerMode: true,
+        })
+        .then((willDelete) => {
+          if (willDelete) {
+            swal("Poof! Your imaginary file has been deleted!", {
+              icon: "success",
+            });
+          } else {
+            swal("Your imaginary file is safe!");
+          }
         });
-      } else {
-        swal("Your imaginary file is safe!");
-      }
     });
-});
+  </script>
 
-
-
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-
-// Unix timestamp (in seconds) to count down to
-var twoDaysFromNow = (new Date().getTime() / 1000) + (160 * 2) + 1;
-
-// Set up FlipDown
-var flipdown = new FlipDown(twoDaysFromNow)
-
-  // Start the countdown
-  .start()
-
-  // Do something when the countdown ends
-  .ifEnded(() => {
-    console.log('The countdown has ended!');
-  });
-
-// Show version number
-var ver = document.getElementById('ver');
-ver.innerHTML = flipdown.version;
-});
-
-</script>
 </body>
 
 </html>

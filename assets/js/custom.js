@@ -353,3 +353,9 @@ $(document).ready(function () {
     });
   $('.dataTables_length').addClass('bs-select');
   });
+
+  $(document).ready(function () {
+    $("#start").click(function () {
+      $("#show-box").toggle();
+    });
+  });
